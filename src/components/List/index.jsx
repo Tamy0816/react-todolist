@@ -16,6 +16,7 @@ export default class List extends React.Component {
     // 组件注销时取消订阅
     PubSub.unsubscribe(this.pubsub_token);
   }
+  // 状态在哪里维护，改变状态的事件就放在哪个组件里
   state = {
     todos: [{ id: 0, name: '吃饭', done: false }, { id: 1, name: '喝水', done: false }]
   }
